@@ -1,0 +1,9 @@
+nav {
+    background-color: #00bcd4;
+    color: white;
+}
+nav span {
+    color: white;
+    font-weight: normal;
+    opacity: 1;
+}

@@ -1,0 +1,14 @@
+<!--<md-toolbar class="main" color="primary" style="font-weight:normal;">
+  <span>My Forum</span>
+  <nav style="color:white">
+      <a style="color:white" routerLink="/questions" routerLinkActive="active">Questions</a>
+      <a style="color:white" routerLink="/tags" routerLinkActive="active">Tags</a>
+  </nav>
+</md-toolbar>-->
+
+<nav md-tab-nav-bar>
+  <span class="mat-tab-link">MY FORUM</span>
+  <a md-tab-link routerLink="/questions" routerLinkActive="active">QUESTIONS</a>
+  <a md-tab-link routerLink="/tags">TAGS</a>
+</nav>   
+<router-outlet></router-outlet>

@@ -1,0 +1,35 @@
+.example-card {
+  width: 90%;
+  max-width: 90%;
+}
+md-card, md-card-content {
+    text-align: left;
+}
+.tags {
+    max-width: 80%;
+    padding-left: 50px;
+    margin: 0 auto;
+}
+.tag-container {
+    width: 250px;
+    height: 160px;
+    float: left;
+    padding: 5px;
+    padding-right:20px;
+}
+.tag-description {
+    word-wrap: break-word;
+    font-size: 13px;
+    text-align: justify;
+    padding: 5px;
+    overflow: hidden;
+    height: 70%;
+}
+
+.mat-chip:not(.mat-basic-chip) {
+    display: inline-block;
+    padding: 8px 12px 8px 12px;
+    border-radius: 24px;
+    font-size: 13px;
+    line-height: 16px;
+}
