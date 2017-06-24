@@ -11,11 +11,18 @@ md-card, md-card-content {
     margin: 0 auto;
 }
 .tag-container {
-    width: 250px;
-    height: 160px;
+    height: 100px;
     float: left;
     padding: 5px;
     padding-right:20px;
+    border-bottom: 1px solid #eff0f1;
+}
+@media screen and (min-width: 700px) {
+  .tag-container {
+    width: 250px;
+    height: 160px;
+    border: 0;
+  }
 }
 .tag-description {
     word-wrap: break-word;

@@ -1,10 +1,11 @@
-<div class="questions">
+<div class="forum-container">
+  <h3 style="font-weight:normal; padding: 5px;">Questions</h3>
   <div *ngFor="let question of questions" class="question-container">
     <h3 class="question-title">{{question.title}}</h3>
     <div class="question-description">{{question.description}}</div>
     <div class="question-tags-container">
       <md-chip-list class="mat-chip-list">
-        <md-chip *ngFor="let tag of question.tags">
+        <md-chip *ngFor="let tag of question.tags" color="warn" selected="true">
             {{tag}}
         </md-chip>
       </md-chip-list>

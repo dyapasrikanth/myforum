@@ -7,7 +7,7 @@ import { TagsComponent }      from './tags/tags.component';
 const routes: Routes = [
   { path: '', redirectTo: '/questions', pathMatch: 'full' },
   { path: 'questions',  component: QuestionsComponent },
-  { path: 'tags', component: TagsComponent }
+  { path: 'topics', component: TagsComponent }
 ];
 
 @NgModule({

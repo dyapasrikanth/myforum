@@ -1,7 +1,7 @@
-<div class="tags">
-  <h3 style="font-weight:normal; padding: 5px;">Tags</h3>
+<div class="forum-container">
+  <h3 style="font-weight:normal; padding: 5px;">Topics</h3>
   <div class="tag-container" *ngFor="let tag of tags">
-    <div><md-chip>{{ tag.name }}</md-chip></div>
+    <div><md-chip  color="accent" selected="true">{{ tag.name }}</md-chip></div>
     <div class="tag-description">
       {{ tag.description }}
     </div>

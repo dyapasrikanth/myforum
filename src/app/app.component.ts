@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  links = [
+    {
+      routerLink:'/questions',
+      routerLabel:'QUESTIONS'
+    },
+    {
+      routerLink:'/topics',
+      routerLabel:'TOPICS'
+    }
+  ]
 }

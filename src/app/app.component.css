@@ -1,9 +1,6 @@
-nav {
-    background-color: #00bcd4;
-    color: white;
-}
 nav span {
-    color: white;
+    color: black;
     font-weight: normal;
     opacity: 1;
+    cursor: default;
 }
