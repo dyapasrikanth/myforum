@@ -13,12 +13,16 @@ import { QuestionsService } from './questions/questions.service';
 import { TagsService } from './tags/tags.service';
 
 import { AppRoutingModule }     from './app-routing.module';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuestionsComponent,
-    TagsComponent
+    TagsComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

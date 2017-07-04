@@ -1,4 +1,4 @@
-<nav md-tab-nav-bar class="candy-carousel">
+<!--<nav md-tab-nav-bar class="candy-carousel">
   <span class="mat-tab-link">MY FORUM</span>
   <a md-tab-link
      *ngFor="let link of links"
@@ -6,6 +6,12 @@
      routerLinkActive #rla="routerLinkActive"
      [active]="rla.isActive">
     {{link.routerLabel}}
-  </a>
-</nav>   
+  </a>  
+</nav>-->
+<md-toolbar color="primary">
+    <button md-button (click)="navigate('/questions')">My Forum</button>
+    <span class="fill-remaining-space"></span>
+    <button md-button style="margin-right:20px;" (click)="navigate('/signin')">SIGN IN</button>
+    <button md-button (click)="navigate('/signup')">REGISTER</button>
+</md-toolbar>
 <router-outlet></router-outlet>

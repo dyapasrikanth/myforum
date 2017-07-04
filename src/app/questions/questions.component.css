@@ -2,6 +2,22 @@
     padding: 5px;
     border-bottom: 1px solid #eff0f1;
 }
+.question-container-head {
+    display: -webkit-flex;
+    display: flex;
+    width:100%;
+}
+.question-container-head-search {
+    margin-left:5px;
+    -webkit-flex: 2;
+    flex: 2;
+}
+.forums-list-button-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
 .question-title {
     color: #07C;
     font-size: 16px;

@@ -1,5 +1,35 @@
 <div class="forum-container">
-  <h3 style="font-weight:normal; padding: 5px;">Questions</h3>
+  <div class="question-container-head">
+    <div class="forums-list-button-container">
+      <button md-button [mdMenuTriggerFor]="menu">
+        FORUMS
+        <md-icon>keyboard_arrow_down</md-icon>
+      </button>
+    </div>
+    <md-input-container class="question-container-head-search">    
+      <input mdInput placeholder="SEARCH" value="">
+      <md-icon mdSuffix>search</md-icon>
+    </md-input-container>  
+  </div>
+
+  <md-menu #menu="mdMenu">
+    <button md-menu-item>Virtualization and Cloud</button>
+    <button md-menu-item>Network Storage Protocols</button>
+    <button md-menu-item>Backup and Restore</button>
+  </md-menu>
+  <md-card style="box-shadow: none;">
+    <md-card-header>
+    <md-card-title><h3>FEATURED</h3></md-card-title>
+  </md-card-header>
+  <md-card-content>
+    <p>
+      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+      bred for hunting.
+    </p>
+  </md-card-content>
+  </md-card>
+  <md-card>
   <div *ngFor="let question of questions" class="question-container">
     <h3 class="question-title">{{question.title}}</h3>
     <div class="question-description">{{question.description}}</div>
@@ -9,6 +39,7 @@
             {{tag}}
         </md-chip>
       </md-chip-list>
-    </div>
+    </div>    
   </div>
+  </md-card>
 </div>
